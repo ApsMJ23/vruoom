@@ -1,13 +1,14 @@
 .Banner {
+    position: fixed;
+    top: 0;
     padding: 1rem;
     background: #FEFEFE;
-    position: sticky;
     height: 3rem;
     position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .Logo {
@@ -17,7 +18,8 @@
 
     }
 }
-.LinkContainer{
+
+.LinkContainer {
     display: flex;
     gap: 1rem;
 }
@@ -34,17 +36,20 @@
     font-size: 16px;
     border: none;
 }
-.IndividualLink{
+
+.IndividualLink {
     text-decoration: none;
     color: #565D6D;
     font-family: Catamaran;
     font-size: 18px;
     font-weight: 300;
-    &:hover{
+
+    &:hover {
         color: #C03910;
     }
 }
-.IndividualLinkActive{
+
+.IndividualLinkActive {
     @extend .IndividualLink;
     color: #C03910;
 }

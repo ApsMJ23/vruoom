@@ -1,6 +1,5 @@
 .HomeContainer {
     display: flex;
-    background-color: #8A290B;
     width: 100%;
     height: 100vh;
 }
@@ -48,4 +47,28 @@
     object-position: center;
     border-top-right-radius: 28px;
     border-bottom-right-radius: 28px;
+}
+.IntroBanner{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: -1.9rem;
+    z-index: -1;
+    width: 130px;
+    height: 20px;
+    border-radius: 1in;
+    padding: 1rem;
+    box-shadow:inset -100px 0 #FDF3F0,inset 9in 0 #fff;
+}
+.IntroBannerContainer{
+    display: flex;
+    align-items: center;
+}
+.IntroImg{
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+}
+.IntroImgContainer{
+    padding: 4rem;
 }

@@ -14,6 +14,10 @@ function App() {
                 main: colors.brown[50],
                 contrastText: colors.deepOrange[900],
             },
+            warning:{
+                main:'#D29211',
+                light:'#FDF3F0'
+            }
         },
         typography:{
             fontFamily:[

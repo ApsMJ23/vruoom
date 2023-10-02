@@ -9,6 +9,7 @@ function App() {
        <Suspense fallback={<div>Loading...</div>}>
        <Routes>
            <Route path='/' element={<>Hello</>}/>
+           <Route path='*' element={<>Not Found</>}/>
        </Routes>
        </Suspense>
    </>

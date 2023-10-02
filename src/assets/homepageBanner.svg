@@ -3,7 +3,7 @@
 <g clip-path="url(#clip0_0_1)" filter="url(#filter0_d_0_1)">
 <rect width="1440" height="7416" transform="translate(0 -73)" fill="#FEFEFE"/>
 <rect width="1439" height="754" transform="translate(24)" fill="#8A290B"/>
-<path d="M0 0H825C841.569 0 855 13.4315 855 30V724C855 740.569 841.569 754 825 754H0V0Z" fill="url(#pattern0)"/>
+<path d="M0 0H855V754H0V0Z" fill="url(#pattern0)"/>
 </g>
 <defs>
 <filter id="filter0_d_0_1" x="-6" y="-76" width="1452" height="7428" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

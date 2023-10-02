@@ -2,30 +2,27 @@
     display: flex;
     background-color: #8A290B;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .HomeSideTextContainer {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     color: #FEFEFE;
     padding: 0 4rem;
 
-    h1 {
+    .Heading {
         font-size: 48px;
         font-family: Catamaran-regular, sans-serif;
         font-weight: 400;
-        line-height: 68px;
     }
 
-    p {
+    .SubHeading {
         font-family: Catamaran, sans-serif;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        line-height: 30px;
     }
 }
 .HomeCTA {
@@ -42,4 +39,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+}
+.HomeImg{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
 }

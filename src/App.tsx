@@ -1,8 +1,10 @@
-import React, {Suspense} from 'react';
+import React from 'react';
 import './App.css';
-import {Routes,Route} from "react-router-dom";
-import {HeaderLazy, HomeLazy} from "./Common/Lazy";
+import {HeaderLazy, HomeLazy, LoginScreenLazy} from "./Common/Lazy";
 import {createTheme, colors, ThemeProvider} from "@mui/material";
+import RootRoutes from "./Routes/RootRoutes";
+import ApplyInterceptor from "./Common/Apis/ApplyInterceptor";
+
 function App() {
     const theme = createTheme({
         palette: {
@@ -14,13 +16,13 @@ function App() {
                 main: colors.brown[50],
                 contrastText: colors.deepOrange[900],
             },
-            warning:{
-                main:'#D29211',
-                light:'#FDF3F0'
+            warning: {
+                main: '#D29211',
+                light: '#FDF3F0'
             }
         },
-        typography:{
-            fontFamily:[
+        typography: {
+            fontFamily: [
                 'Catamaran',
                 'Roboto',
                 'sans-serif'
@@ -28,19 +30,15 @@ function App() {
             ].join(',')
         }
     });
-  return (
-   <>
-       <ThemeProvider theme={theme}>
-       <HeaderLazy/>
-       <Suspense fallback={<div>Loading...</div>}>
-       <Routes>
-           <Route path='/' element={<HomeLazy/>}/>
-           <Route path='*' element={<>Not Found</>}/>
-       </Routes>
-       </Suspense>
-       </ThemeProvider>
-   </>
-  );
+    return (
+        <div>
+            <ThemeProvider theme={theme}>
+                <HeaderLazy/>
+                <ApplyInterceptor/>
+                <RootRoutes/>
+            </ThemeProvider>
+        </div>
+    );
 }
 
 export default App;

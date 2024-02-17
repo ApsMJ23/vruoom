@@ -20,14 +20,17 @@ const LoginScreen = () => {
             password: user.password
         }
         const res = await loginUser(payload)
-        if(res.hasOwnProperty('token')){
-            localStorage.setItem('token',res.token)
-            navigate('/profile')
-            toast.success('Login Successful')
-        }
-        else{
-            if(res.hasOwnProperty('error'))toast.error(res.error)
-            else toast.error('Invalid Credentials')
+        if(res) {
+            if (res.hasOwnProperty('token')) {
+                localStorage.setItem('token', res.token)
+                navigate('/admin/profile')
+                toast.success('Login Successful')
+            } else {
+                if (res.hasOwnProperty('error')) toast.error(res.error)
+                else toast.error('Invalid Credentials')
+            }
+        }else{
+            toast.error('Failed To Login, Please Try Again Later')
         }
 
     }

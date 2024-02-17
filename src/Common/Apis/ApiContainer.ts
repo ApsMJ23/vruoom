@@ -23,3 +23,12 @@ export const fetchProfile = ()=>{
     };
     return axios(payload);
 }
+
+export const fetchNoStaffUsers = ()=>{
+    const payload: CustomRequest = {
+        method: 'GET',
+        url: `${API_BASE_AUTH_PATH}getNotStaffUsers/`,
+        isAuthRequired: true,
+    };
+    return axios(payload);
+}
